@@ -16,8 +16,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Click Here!!](https://your-solution-url.com)
-- Live Site URL: [Click Here!!](https://your-live-site-url.com)
+- Solution URL: [Click Here!!](https://github.com/ubed90/stats-preview-card-component-main-FE-mentor)
+- Live Site URL: [Click Here!!](https://ubed90.github.io/stats-preview-card-component-main-FE-mentor/)
 
 ## My process
 
