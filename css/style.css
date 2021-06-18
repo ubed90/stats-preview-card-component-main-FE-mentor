@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/* ==================
+    GENERAL
+==================== */
+
+:root {
+    --bg: hsl(233, 47%, 7%);
+    --image-acc: hsl(277, 64%, 61%);
+    --con-bg: hsl(244, 38%, 16%);
+    --col-head-stats: hsl(0, 0%, 100%);
+    --col-para: hsla(0, 0%, 100%, 0.5);
+    --col-stat-head: hsla(0, 0%, 100%, 0.6);
+    --ff-head: 'Inter', sans-serif;
+    --ff-para: 'Lexend Deca', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1rem;
+    font-family: var(--ff-para);
+    color: var(--col-head-stats);
+}
+
+
+/* ==================
+    CONTAINER - MOBILE
+==================== */
+
+.container {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--con-bg);
+    text-align: center;
+    border-radius: .5em;
+}
+
+/* ==================
+    HERO - IMAGE
+==================== */
+
+.head-image {
+    background: var(--image-acc);
+    object-fit: cover;
+    border-radius: .5em .5em 0 0;
+}
+
+.mobile-image {
+    border-radius: .5em .5em 0 0;
+    opacity: .5;
+}
+
+
+/* ==================
+    HERO - CONTENT
+==================== */
+
+.content {
+    padding: 1em 1.6em 2.5em;
+}
+
+.head {
+    color: var(--image-acc);
+}
+
+.main-para {
+    line-height: 1.6;
+}
+
+.lexend-Deca {
+    font-family: var(--ff-para);
+    color: var(--col-para);
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+}
+
+.indi-stats {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: var(--ff-head);
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+.block {
+    display: block;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+
+@media (min-width:1000px) {
+    .container {
+        max-width: 900px;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .container > * {
+        width: 50%;
+    }
+
+    .content {
+        order: -1;
+        padding: 3em;
+    }
+
+    .main-heading {
+        margin-top: 0;
+    }
+
+    .mobile-image {
+        min-height: 25rem;
+    }
+
+
+    .head-image , .mobile-image {
+        border-radius: 0 .5em .5em 0;
+    }
+
+    .stats {
+        flex-direction: row;
+        margin-top: 4em;
+        text-align: center;
+    }
+
+    .indi-stats {
+        margin: 0;
+    }
+
+    .indi-stats + .indi-stats {
+        margin-left: 2em;
+    }
+}
